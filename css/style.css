@@ -163,18 +163,10 @@ nav ul {
     margin: 0;
 }
 
-/*
-
-.blog-post:hover {
-  transform: translateY(-2px);
-  box-shadow: 0px 5px 10px 0 #352d23;
-}
-
-*/
-
 
 .blog-post:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 @media (min-width: 512px) {
@@ -203,4 +195,31 @@ nav ul {
         padding: 0;
         text-align: center;
     }
+}
+
+/* footer */
+footer {
+    background: #202020;
+    width: 100%;
+    text-align: center;
+    padding: 37px 0;
+    margin: 0;
+}
+
+.footer-title {
+    color: #ECECEC;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.08;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-copyright {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #D7D7D7;
 }
