@@ -7,7 +7,6 @@ body {
 
 /* Header */
 header {
-    border-bottom: 1px solid black;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -145,6 +144,7 @@ nav ul {
     font-weight: 400;
     color: black;
     margin-bottom: 0.6392em;
+    text-transform: uppercase;
 }
 
 .blog-post-title {
@@ -167,6 +167,11 @@ nav ul {
 .blog-post:hover {
     opacity: 0.8;
     cursor: pointer;
+}
+
+.blog-link {
+    color: inherit;
+    text-decoration: none;
 }
 
 @media (min-width: 512px) {
@@ -222,4 +227,120 @@ footer {
     font-weight: 400;
     line-height: 1.25;
     color: #D7D7D7;
+}
+
+/* main post */
+.main-post {
+    color: #151515;
+    margin: 0;
+    padding: 2em 1.25em 3.1875em;
+}
+
+.main-post time {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 400;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.main-post h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin: 0 0 0.5em;
+}
+
+.main-post h3 {
+    font-size: 1rem;
+}
+
+.main-post img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 374 / 191; /* Defines the frame's shape */
+    object-fit: cover;      /* Clips the image to fill the frame */
+
+    /* THIS IS THE KEY: Control which part of the image is shown.
+      'top', 'center', 'bottom' for vertical.
+      'left', 'center', 'right' for horizontal.
+      Or use percentages for fine control (e.g., 75% 50%).
+    */
+    object-position: 0 70%;
+}
+
+.image-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2.1875em;
+  }
+
+
+h4 {
+    color: black;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 1084px) {
+    .main-post {
+    padding: 4.4375em 7.5625em 4.5625em;
+    font-size: 1.143rem;
+    max-width: 1045px;
+    margin: 0 auto;
+    }
+
+   .image-wrapper {
+        /* Extend into the padding area while staying centered */
+        width: calc(100% + 8.5em); /* Add back the negative margins: 4.25em × 2 = 8.5em */
+        margin-left: -4.25em;      /* 7.5625em - 3.3125em = 4.25em */
+        margin-right: -4.25em;     /* 7.5625em - 3.3125em = 4.25em */
+        margin-bottom: 2.1875em;
+    }
+
+    .main-post time {
+        font-size: 1rem;
+        margin-bottom: 1.5em;
+    }
+
+    .main-post h2 {
+        font-size: 2.25rem;
+        margin-bottom: 0.75em;
+    }
+
+    .main-post-intro {
+        margin-bottom: 2.25em;
+    }
+
+    .main-post h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+/* about me page */
+
+#about-me-img {
+    width: 182px;
+    aspect-ratio: auto;
+    margin-top: 0;
+    margin-bottom: 1.6875em;
+}
+
+.main-post .about-me-h2 {
+    font-size: 2.1775rem;
+    line-height: 1.08;
+    letter-spacing: -1.03;
+    margin-bottom: 0.459em;
+}
+
+.about-me-main-post-intro {
+    margin-bottom: 3.125em;
 }
